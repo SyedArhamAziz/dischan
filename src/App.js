@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
-function App() {
+function Message({ id, datetime, messagetext }) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="message">
+      <p>{id}</p>
+      <p>{datetime}</p>
+      <div className="message_content">
+        <p>{messagetext}</p>
+      </div>
+    </div>
+  )
+}
+
+export default function App() {
+  return (
+    <div>
+
+      <Message id={"g4Jx8N"} datetime={"2023-04-15 23:34:55"} messagetext={"h"} />
+      <Message id={"g4Jx8N"} datetime={"2023-04-15 23:34:55"} messagetext={"h"} />
+      <Message id={"g4Jx8N"} datetime={"2023-04-15 23:34:55"} messagetext={"h"} />
+      <Message id={"g4Jx8N"} datetime={"2023-04-15 23:34:55"} messagetext={"h"} />
     </div>
   );
 }
-
-export default App;
